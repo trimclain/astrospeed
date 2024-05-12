@@ -34,19 +34,11 @@ My config:
     highlights = {
         global = {
             modify_hl_groups = function(hl, c)
-                -- hl.NeogitDiffDelete = { fg = c.ui.base, bg = c.syntax.red }
-                -- hl.NeogitDiffDeleteHighlight = { fg = c.ui.base, bg = c.syntax.red }
-                -- hl.NeogitDiffAdd = { fg = c.ui.base, bg = c.syntax.green }
-                -- hl.NeogitDiffAddHighlight = { fg = c.ui.base, bg = c.syntax.green }
-
-                -- I like the color from hop.nvim
                 hl.FlashLabel = { fg = c.ui.base, bg = "#ff007c", bold = true }
 
-                if CONFIG.ui.illuminate then
-                    hl.IlluminatedWordText = { fg = c.none, bg = "#31363d" }
-                    hl.IlluminatedWordRead = { fg = c.none, bg = "#31363d" }
-                    hl.IlluminatedWordWrite = { fg = c.none, bg = "#31363d" }
-                end
+                hl.IlluminatedWordText = { fg = c.none, bg = "#31363d" }
+                hl.IlluminatedWordRead = { fg = c.none, bg = "#31363d" }
+                hl.IlluminatedWordWrite = { fg = c.none, bg = "#31363d" }
             end,
         },
     },
