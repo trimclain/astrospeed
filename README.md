@@ -55,3 +55,16 @@ My config:
 
 Note: For the lualine colorscheme to be set correctly, it's enough to use `theme = "auto"` in the lualine config. This
 works with AstroSpeed, but for some reason doesn't with AstroTheme. In that case you need to specify `theme = "astrotheme"`.
+
+## Installation
+with [lazy.nvim](https://github.com/folke/lazy.nvim):
+```lua
+{
+    "trimclain/astrospeed",
+    lazy = false,
+    priority = 1000,
+    config = function()
+        vim.cmd.colorscheme("astrospeed")
+    end,
+},
+```
