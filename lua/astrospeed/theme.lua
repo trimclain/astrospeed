@@ -542,7 +542,9 @@ theme.set_highlights = function()
 
     -- Flash
     hl(0, "FlashBackdrop", { fg = C.syntax.mute })
-    hl(0, "FlashLabel", { fg = C.ui.base, bg = C.ui.orange, bold = true })
+    -- hl(0, "FlashLabel", { fg = C.ui.base, bg = C.ui.orange, bold = true })
+    -- INFO: my custom highlight
+    hl(0, "FlashLabel", { fg = C.ui.base, bg = "#ff007c", bold = true })
 
     -- GitSigns
     hl(0, "GitSignsAdd", { fg = C.ui.green, bg = "NONE" })
@@ -914,9 +916,13 @@ theme.set_highlights = function()
     hl(0, "TodoBgBUG", { bg = C.ui.red, fg = C.ui.base, bold = true })
 
     -- Vim Illuminate
-    hl(0, "IlluminatedWordText", { link = "LspReferenceText" })
-    hl(0, "IlluminatedWordRead", { link = "LspReferenceRead" })
-    hl(0, "IlluminatedWordWrite", { link = "LspReferenceWrite" })
+    -- hl(0, "IlluminatedWordText", { link = "LspReferenceText" })
+    -- hl(0, "IlluminatedWordRead", { link = "LspReferenceRead" })
+    -- hl(0, "IlluminatedWordWrite", { link = "LspReferenceWrite" })
+    -- INFO: my custom highlights
+    hl(0, "IlluminatedWordText", { fg = C.none, bg = "#31363d" })
+    hl(0, "IlluminatedWordRead", { fg = C.none, bg = "#31363d" })
+    hl(0, "IlluminatedWordWrite", { fg = C.none, bg = "#31363d" })
 
     -- Vim Viki
     hl(0, "VimwikiLink", { fg = C.syntax.cyan, bg = "NONE" })

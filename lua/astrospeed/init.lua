@@ -2,7 +2,7 @@ local M = {}
 local theme = require("astrospeed.theme")
 
 M.setup = function()
-    vim.cmd("hi clear")
+    vim.cmd.highlight("clear")
 
     vim.o.background = "dark"
     if vim.fn.exists("syntax_on") then
