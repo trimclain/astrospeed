@@ -18,8 +18,8 @@ My config:
 ```lua
 {
     palette = "astrodark",
-    termguicolors = true, -- TODO: use this?
-    terminal_colors = true,-- TODO: use this?
+    termguicolors = true,
+    terminal_colors = false,-- default: true
     dev = false,
     style = {
         transparent = false,
@@ -31,7 +31,6 @@ My config:
         italic_comments = true,
         simple_syntax_colors = true, -- default: false
     },
-    -- TODO: add this part
     highlights = {
         global = {
             modify_hl_groups = function(hl, c)
@@ -53,3 +52,6 @@ My config:
     },
 }
 ```
+
+Note: For the lualine colorscheme to be set correctly, it's enough to use `theme = "auto"` in the lualine config. This
+works with AstroSpeed, but for some reason doesn't with AstroTheme. In that case you need to specify `theme = "astrotheme"`.
