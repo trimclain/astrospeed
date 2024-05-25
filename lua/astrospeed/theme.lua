@@ -45,7 +45,7 @@ theme.set_highlights = function()
     hl(0, "Folded", { fg = C.ui.none_text, bg = "NONE" })
     hl(0, "FoldColumn", { fg = C.ui.none_text, bg = "NONE" })
     hl(0, "NonText", { fg = C.ui.none_text, bg = "NONE" })
-    hl(0, "EndOfBuffer", { fg = C.ui.base, bg = "NONE" })
+    hl(0, "EndOfBuffer", { fg = C.ui.none_text, bg = "NONE" })
     hl(0, "SignColumn", { fg = "NONE", bg = "NONE" })
 
     hl(0, "DiffAdd", { fg = C.ui.base, bg = C.syntax.green })
